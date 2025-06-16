@@ -1,0 +1,20 @@
+{% extends "partials/base.html" %}
+{% load static %}
+
+{% block csslink %}
+ <link rel="stylesheet" href="{% static 'freelance/testimonials.css' %}"> 
+{% endblock csslink %}
+
+{% block main %}
+<div class="testimonials-section">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonials-grid">
+        {% for testimonial in testimonials %}
+            <div class="testimonial-card">
+                <p class="testimonial-text">“{{ testimonial.text }}”</p>
+                <p class="testimonial-name">— {{ testimonial.name }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock main %}

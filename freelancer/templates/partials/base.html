@@ -1,0 +1,42 @@
+ {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Freelance Site</title>
+  <link rel="stylesheet" href="{% static 'base/base.css' %}">
+  {% block csslink %}
+  
+  {% endblock csslink %}
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a href="{% url 'testimonials' %}">Testimonials</a>
+    <a href="{% url 'service' %}">services</a>
+    <a href="{% url 'pricing' %}">Pricing</a>
+    <a href="{% url 'case_study' %}">case_study</a>
+    <a href="{% url 'blog' %}">Blog</a>
+    
+  </nav>
+</header>
+
+
+
+{% block main %}
+<section id="testimonials"><h2>Testimonials</h2></section>
+<section id="case_study"><h2>Case Study</h2></section>
+<section id="pricing"><h2>Pricing</h2></section>
+<section id="services"><h2>Services</h2></section>
+<section id="blog"><h2>Blog</h2></section>
+{% endblock main %}
+
+
+<!-- Dummy sections for scrolling -->
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends "partials/base.html" %}
+{% load static %}
+{% block css %}
+
+{% endblock css %}
+{% block main %}
+{% for artist in artists %}
+    <h2>{{ artist.name }}</h2>
+    {% for album in artist.artist_set.all %}
+      {{album}}
+    {% endfor %}
+
+{% endfor %}
+   
+{% endblock main %}     

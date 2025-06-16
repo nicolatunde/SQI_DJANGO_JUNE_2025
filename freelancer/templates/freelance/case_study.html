@@ -1,0 +1,41 @@
+{% extends "partials/base.html" %}
+{% load static %}
+
+{% block csslink %}
+<link rel="stylesheet" href="{% static 'freelance/case_study.css' %}">
+{% endblock csslink %}
+
+{% block main %}
+<div class="case-study">
+    <h1>Case Study</h1>
+
+    <h2>Background</h2>
+    <p>NIKO, a software developer from Africa, left his job at an IT firm in 2022 to start freelancing. His skills included JavaScript, React,pyhon,django and Node.js.</p>
+
+    <h2>Challenge</h2>
+    <ul>
+      <li>Finding consistent clients</li>
+      <li>Managing income flow</li>
+      <li>Handling projects independently</li>
+    </ul>
+
+    <h2>Approach</h2>
+    <ul>
+      <li>Built a strong LinkedIn and GitHub profile</li>
+      <li>Created a personal portfolio website</li>
+      <li>Used platforms like Upwork and Freelancer.com</li>
+      <li>Organized work with Trello, Slack, and Notion</li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <ul>
+      <li>15+ international clients in one year</li>
+      <li>Income doubled by year-end</li>
+      <li>Secured long-term contracts with 3 clients</li>
+    </ul>
+
+    <div class="highlight">
+      Key Insight: Success in tech freelancing relies on showing your work, marketing yourself, and strong communication.
+    </div>
+  </div>
+{% endblock main %}

@@ -1,0 +1,19 @@
+{% extends "partials/base.html" %}
+{% load static %}
+
+
+{% block csslink %}
+ <link rel="stylesheet" href="{% static 'freelance/services.css' %}"> 
+{% endblock csslink %}
+ 
+
+{% block main %}
+<div class="services-container">
+    {% for eachservice in service %}
+        <div class="service-card">
+            <h2>{{ eachservice.name }}</h2>
+            <p class="price">{{ eachservice.price }}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock main %}

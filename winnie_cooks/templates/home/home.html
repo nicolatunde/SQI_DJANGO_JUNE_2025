@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Winnie's Wrap</title>
+     <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+{% block header %}
+ <header>
+        <div class="logo">Winnie's Wrap</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="{% url 'dishes' %}">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+{% endblock header %}
+   
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Winnie's Wrap</h1>
+            <p>Fresh. Flavorful. Fast.</p>
+            <a href="{% url 'dishes' %}" class="btn">View Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-preview">
+        <h2>Our Wraps</h2>
+        <ul>
+            <li>Classic Chicken Wrap</li>
+            <li>Spicy Beef Wrap</li>
+            <li>Veggie Delight Wrap</li>
+            <li>Sweet BBQ Wrap</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Winnie's Wrap. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

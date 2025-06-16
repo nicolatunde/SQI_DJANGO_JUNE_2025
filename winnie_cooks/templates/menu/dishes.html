@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Wraps - Winnie's Wrap</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    {% block css %}
+    
+    {% endblock css %}
+</head>
+<body>
+    <section class="wraps-section">
+        <h2 class="section-title">Our Signature Wraps</h2>
+        <div class="wraps-container">
+            <div class="wrap-card">
+                <img src="{% static 'imagefile/winnieswrap.jpg' %}" alt="Shawarma Wrap">
+                <div class="wrap-details">
+                    <h3>Classic Shawarma</h3>
+                    <p class="price">₦2,500</p>
+                    <p>Succulent grilled chicken, garlic sauce, lettuce, and pickles wrapped in warm flatbread.</p>
+                </div>
+            </div>
+            <div class="wrap-card">
+                <img src="{% static 'imagefile/winnieswrap.jpg' %}" alt="Shawarma Wrap">
+                
+                <div class="wrap-details">
+                    <h3>Spicy Beef Wrap</h3>
+                    <p class="price">₦3,000</p>
+                    <p>Juicy spicy beef, caramelized onions, peppers, and house-made chili mayo.</p>
+                </div>
+            </div>
+            <div class="wrap-card">
+                <img src="{% static 'imagefile/winnieswrap.jpg' %}" alt="Shawarma Wrap">
+                
+                <div class="wrap-details">
+                    <h3>Veggie Delight</h3>
+                    <p class="price">₦2,200</p>
+                    <p>Fresh grilled veggies, hummus, spinach, and feta in a soft whole-wheat wrap.</p>
+                </div>
+            </div>
+            <div class="wrap-card">
+                <img src="{% static 'imagefile/winnieswrap.jpg' %}" alt="Shawarma Wrap">
+                
+                <div class="wrap-details">
+                    <h3>BBQ Chicken Wrap</h3>
+                    <p class="price">₦2,800</p>
+                    <p>Grilled BBQ chicken, coleslaw, cheddar, and tangy BBQ sauce for a smoky bite.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

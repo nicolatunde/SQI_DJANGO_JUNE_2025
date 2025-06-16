@@ -1,0 +1,94 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #1e1e2f, #12121c);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Header & Navbar */
+header {
+  background-color: #1a1a2e;
+  padding: 20px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00f5d4;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 14px;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.nav-links a:hover {
+  background-color: #00f5d4;
+  color: #12121c;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 16px 28px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.artist {
+  background-color: #ff4d6d;
+  color: #fff;
+}
+
+.artist:hover {
+  background-color: #ff7f96;
+}
+
+.album {
+  background-color: #00f5d4;
+  color: #12121c;
+}
+
+.album:hover {
+  background-color: #60fef2;
+}

@@ -1,0 +1,62 @@
+{% extends "partials/base.html" %}
+{% load static %}
+
+{% block css  %}
+<link rel="stylesheet" href="{% static 'bakery_css/home.css' %}">
+{% endblock css %}
+  <!-- Navigation Bar -->
+  
+{% block main %}
+   <header>
+     <nav class="navbar">
+      <h1 class="logo">Akeem Pastries</h1>
+      <ul class="nav-links">
+        <li><a href="{% url 'bakery:about' %}">About</a></li>
+        <li><a href="{% url 'bakery:menu' %}">Menu</a></li>
+        <li><a href="{% url 'bakery:contact' %}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Freshly Baked Happiness</h2>
+      <p>Delicious pastries made with love and the finest ingredients.</p>
+      <a href="{% url 'bakery:menu' %}" class="menu-button-link">
+        <button class="menu-button">See Our Menu</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2><a href="">About Us</a></h2>
+    <p>Welcome to Akeem Pastries! We bake everything from scratch with a passion for flavor and a love for the community.</p>
+  </section>
+
+  
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2><a href="">Contact Us</a></h2>
+    <p>Have questions or want to place an order? Get in touch with us today!</p>
+  </section> 
+  <!-- Newsletter Popup -->
+< <div id="newsletter-popup" class="popup-overlay">
+    <div class="popup-box">
+      <button class="popup-close" id="popup-close">&times;</button>
+      <h2>Welcome!</h2>
+      <p>Subscribe to our newsletter for updates.</p>
+      <input type="email" id="newsletter-email" placeholder="Enter your email" />
+      <button id="subscribe-button">Subscribe</button>
+    </div>
+  </div>
+<!-- Link the script -->
+
+<script >
+
+</script>
+{% endblock main %}<header>
+  
+
+</html>
